@@ -12,7 +12,7 @@ Teacher App
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<script type="text/javascript">
-			var contextPath = "http://codejugglers.de:80";
+			var contextPath = "http://codejugglers.com:80";
 		</script>
 		
 		<link href="../webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
