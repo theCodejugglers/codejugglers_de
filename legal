@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Contact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<script type="text/javascript">
+			var contextPath = "http://codejugglers.de:80";
+		</script>
+		
+		<link href="webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="resources/css/commons.css" rel="stylesheet">	
+			
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+		</style>
+		<link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+
+		<link rel="shortcut icon" href="resources/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+	</head>
+
+	<body>
+		
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" 
+			   data-toggle="collapse"
+			   data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+
+			<a class="brand" href="index.html">Codejugglers</a>
+
+			<!-- User Profile Menu -->
+			
+
+
+
+			<div class="nav-collapse">
+				<ul class="nav">
+
+					<!-- Home -->
+					<li id="homeNavbar" class="nav pull-left">
+						<a href="index.html">Home</a>
+					</li>
+					
+					<!-- Contact -->
+					<li id="contactNavbar" class="nav">
+						<a href="contact">Contact</a>
+					</li>
+					
+					<!-- Legal -->
+					<li id="legalNavbar" class="nav">
+						<a href="legal">Legal</a>
+					</li>
+
+						
+				</ul>	
+
+				<!-- Super Administrator Menu -->
+				
+
+			</div>
+
+		</div>
+	</div>
+</div>
+		<div class="container">
+			
+
+
+<div>Angaben gemäß § 5 TMG:<br/></div>
+
+<div>
+Codejugglers UG (haftungsbeschränkt)<br />
+Straße des Bohrhammers 21<br />
+44625 Herne<br />
+</div>
+
+<h4>Vertreten durch:</h4>
+<div>
+Dipl.-Inf. Lars Schmidt<br />
+Dipl.-Inf. Thomas Timm
+</div>
+
+<h4>Kontakt:</h4>
+<table>
+	<tr>
+		<td><div>Telefon:</div></td>
+		<td><div>+49 (0) 2323 9593802</div></td>
+	</tr>
+	<!-- <tr><td><div>Telefax:</div></td>
+	<td><div></div></td></tr> -->
+	<tr>
+		<td><div>E-Mail:</div></td>
+		<td><div>business@codejugglers.com</div></td>
+	</tr>
+</table>
+
+<h4>Registereintrag:</h4>
+<div>
+Eintragung im Handelsregister. <br />
+Registergericht: Amtsgericht Bochum <br />
+Registernummer: HRB 13190
+</div>
+<!--
+<h4>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h4>
+<div>Lars Schmidt<br />
+<br />
+Ludwig-Steil-Str. 14<br />
+44625 Herrne</div>
+-->
+
+<h2 class="pagetitle">Haftungsausschluss</h2>
+
+<div><strong>Haftung für Inhalte</strong></div>
+<div>
+Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+</div>
+
+
+<div><strong>Haftung für Links</strong></div>
+<div>
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+</div>
+
+
+<div><strong>Urheberrecht</strong></div>
+<div>
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+</div>
+
+
+<div><strong>Datenschutz</strong></div>
+
+<div>
+Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+</div>
+
+<div>
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+</div>
+
+<div>
+Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+</div>
+			<hr>
+			<footer>
+				<div class="pull-right">
+				<small>© codejugglers UG (haftungsbeschränkt) 2013 | <a class="btn-link" href="legal" target="blank">Legal Notice / Impressum</a></small>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Javascript -->
+		<script	src="webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script	src="webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script	src="resources/js/bootstrap-popover.js"></script>
+		<script	src="resources/js/jquery.dateFormat-1.0.js"></script>
+		<script	src="resources/js/other/utils.js"></script>
+		<script src="resources/js/jquery.validate.cj.js"></script>
+<script src="resources/js/legal/legal.js"></script>	
+	</body>
+</html>

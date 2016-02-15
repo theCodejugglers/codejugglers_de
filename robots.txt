@@ -1,0 +1,144 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<script type="text/javascript">
+			var contextPath = "http://codejugglers.de:80";
+		</script>
+		
+		<link href="/webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/resources/css/commons.css" rel="stylesheet">	
+			
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+		</style>
+		<link href="/resources/css/bootstrap-responsive.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+
+		<link rel="shortcut icon" href="/resources/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+	</head>
+
+	<body>
+		
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="btn btn-navbar" 
+			   data-toggle="collapse"
+			   data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+
+			<a class="brand" href="/">Codejugglers</a>
+
+			<!-- User Profile Menu -->
+			
+
+
+
+			<div class="nav-collapse">
+				<ul class="nav">
+
+					<!-- Home -->
+					<li id="homeNavbar" class="nav pull-left">
+						<a href="/">Home</a>
+					</li>
+					
+					<!-- Contact -->
+					<li id="contactNavbar" class="nav">
+						<a href="/contact">Contact</a>
+					</li>
+					
+					<!-- Legal -->
+					<li id="legalNavbar" class="nav">
+						<a href="/legal">Legal</a>
+					</li>
+
+						
+				</ul>	
+
+				<!-- Super Administrator Menu -->
+				
+
+			</div>
+
+		</div>
+	</div>
+</div>
+		<div class="container">
+			
+
+
+
+
+
+
+
+
+<div class="content">
+	<div class="row">
+		<div class="span8 offset4">
+			<div class="login-form">
+				<h2>Login</h2>
+				<form name="loginForm" action="/resources/j_spring_security_check"
+					  method="POST">
+					<fieldset>
+						<div class="clearfix">
+							<input id="j_username" name="j_username" type="text" placeholder="Email">
+						</div>
+						<div class="clearfix">
+							<input id="j_password" name="j_password" type="password" placeholder="Password">
+						</div>
+						<button class="btn btn-primary" type="submit">
+							Sign in
+						</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+			<hr>
+			<footer>
+				<div class="pull-right">
+				<small>© codejugglers UG (haftungsbeschränkt) 2013 | <a class="btn-link" href="/legal" target="blank">Legal Notice / Impressum</a></small>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Javascript -->
+		<script	src="/webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script	src="/webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script	src="/resources/js/bootstrap-popover.js"></script>
+		<script	src="/resources/js/jquery.dateFormat-1.0.js"></script>
+		<script	src="/resources/js/other/utils.js"></script>
+			
+	</body>
+</html>
