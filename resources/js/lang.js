@@ -4,4 +4,4 @@ function activateLang(lang1) {
 	$('*[lang="'+lang2+'"]').hide();
 	$('*[lang="'+lang1+'"]').show();
 }
-//activateLang(lang1);
+activateLang(lang1);
