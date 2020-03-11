@@ -8,12 +8,12 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<script type="text/javascript">
-			var contextPath = "http://codejugglers.de:80";
+			var contextPath = "//codejugglers.de";
 		</script>
-		
+
 		<link href="webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
-		<link href="resources/css/commons.css" rel="stylesheet">	
-			
+		<link href="resources/css/commons.css" rel="stylesheet">
+
 		<style type="text/css">
 			body {
 				padding-top: 60px;
@@ -23,25 +23,25 @@
 		<link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
-			  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 
 		<link rel="shortcut icon" href="resources/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
 	</head>
 
 	<body>
-		
+
 
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
-			<a class="btn btn-navbar" 
-			   data-toggle="collapse"
-			   data-target=".nav-collapse">
+			<a class="btn btn-navbar"
+					data-toggle="collapse"
+					data-target=".nav-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -50,7 +50,7 @@
 			<a class="brand" href="index.html">Codejugglers</a>
 
 			<!-- User Profile Menu -->
-			
+
 
 
 
@@ -61,22 +61,22 @@
 					<li id="homeNavbar" class="nav pull-left">
 						<a href="index.html">Home</a>
 					</li>
-					
+
 					<!-- Contact -->
 					<li id="contactNavbar" class="nav">
 						<a href="contact">Contact</a>
 					</li>
-					
+
 					<!-- Legal -->
 					<li id="legalNavbar" class="nav">
 						<a href="legal">Legal</a>
 					</li>
 
-						
-				</ul>	
+
+				</ul>
 
 				<!-- Super Administrator Menu -->
-				
+
 
 			</div>
 
@@ -84,7 +84,7 @@
 	</div>
 </div>
 		<div class="container">
-			
+
 
 <div id="formsContent">
 	<!-- Form container -->
@@ -97,37 +97,37 @@
 	</div>
 	<div class="row-fluid">
 		<div class="span12">
-			
+
 <div>Contact us:</div>
 <ul>
-  <li><a href= "#" id="a_vlchd">Email about VLC HD</a></li>
-  <li><a href= "#" id="a_zprmt">Email about ZPRemote</a></li>
-  <li><a href= "#" id="a_teapp">Email about TeacherApp</a></li>
-  <li><a href= "#" id="a_cjcwf">Email about Chrono Watch Face</a></li>
-  <li><a href= "#" id="a_genrl">Email about something else</a></li>
+	<li><a href= "#" id="a_vlchd">Email about VLC HD</a></li>
+	<li><a href= "#" id="a_zprmt">Email about ZPRemote</a></li>
+	<li><a href= "#" id="a_teapp">Email about TeacherApp</a></li>
+	<li><a href= "#" id="a_cjcwf">Email about Chrono Watch Face</a></li>
+	<li><a href= "#" id="a_genrl">Email about something else</a></li>
 </ul>
 
 <script>
 (function() {
-  function address() {
-    var s = "oer@gouret.gcjomplupcsds";
-    var a = [22, 17, 18, 7, 14, 9, 1, 5, 11, 6, 20, 15, 21, 12, 4, 23, 3, 16, 13, 2, 8, 19, 10, 0];
-    var cs = s.split('');
-    for (var i = 0; i < a.length; i++)
-      cs[a[i]] = s[i];
-    return cs.join('');
-  }
+	function address() {
+		var s = "oer@gouret.gcjomplupcsds";
+		var a = [22, 17, 18, 7, 14, 9, 1, 5, 11, 6, 20, 15, 21, 12, 4, 23, 3, 16, 13, 2, 8, 19, 10, 0];
+		var cs = s.split('');
+		for (var i = 0; i < a.length; i++)
+			cs[a[i]] = s[i];
+		return cs.join('');
+	}
 
-  var prefix = "mailto:" + address();
-  document.getElementById("a_vlchd").href = prefix + "?subject=VLC%20HD";
-  document.getElementById("a_zprmt").href = prefix + "?subject=ZPRemote";
-  document.getElementById("a_teapp").href = prefix + "?subject=TeacherApp";
-  document.getElementById("a_cjcwf").href = prefix + "?subject=Chrono Watch Face";
-  document.getElementById("a_genrl").href = prefix + "?subject=Inquiry";
+	var prefix = "mailto:" + address();
+	document.getElementById("a_vlchd").href = prefix + "?subject=VLC%20HD";
+	document.getElementById("a_zprmt").href = prefix + "?subject=ZPRemote";
+	document.getElementById("a_teapp").href = prefix + "?subject=TeacherApp";
+	document.getElementById("a_cjcwf").href = prefix + "?subject=Chrono Watch Face";
+	document.getElementById("a_genrl").href = prefix + "?subject=Inquiry";
 })();
 
 </script>
-			
+
 		</div>
 	</div>
 </div>
@@ -136,50 +136,50 @@
 <!-- not working on mobile, currently -->
 <!--<div class="modal hide fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
 <div class="modal hide" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-    <h3 id="errorModalLabel"></h3>
-  </div>
-  <div id="errorModalBody" class="modal-body">
-    <p id="errorModalMsg" ></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-  </div>
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+		<h3 id="errorModalLabel"></h3>
+	</div>
+	<div id="errorModalBody" class="modal-body">
+		<p id="errorModalMsg" ></p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	</div>
 </div>
 
 
 <!-- not working on mobile, currently -->
 <!--<div class="modal hide fade" id="modalCheck" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
 <div class="modal hide" id="modalCheck" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-    <h3 id="modalLabel"></h3>
-  </div>
-  <div id="modalBody" class="modal-body">
-    <p id="modalMsg" ></p>
-  </div>
-  <div class="modal-footer">
-    <button class="btn btn-secondary" data-dismiss="modal" aria-hidden="true">Close</button>
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+		<h3 id="modalLabel"></h3>
+	</div>
+	<div id="modalBody" class="modal-body">
+		<p id="modalMsg" ></p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-secondary" data-dismiss="modal" aria-hidden="true">Close</button>
 	<button id="buttonSubmit" class="btn btn-success no_return" aria-hidden="true">Submit</button>
-  </div>
+	</div>
 </div>
 
 
 <!-- not working on mobile, currently -->
 <!--<div class="modal hide fade" id="modalLoading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
 <div class="modal hide" id="modalLoading" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <h3 id="modalLoadingLabel"></h3>
-  </div>
-  <div id="modalLoadingBody" class="modal-body">
+	<div class="modal-header">
+		<h3 id="modalLoadingLabel"></h3>
+	</div>
+	<div id="modalLoadingBody" class="modal-body">
 	<div class="progress progress-striped active">
 		<div class="bar" style="width: 100%;"></div>
-    </div>
-    <p id="modalLoadingMsg"></p>
-  </div>
-  <div class="modal-footer">
-  </div>
+		</div>
+		<p id="modalLoadingMsg"></p>
+	</div>
+	<div class="modal-footer">
+	</div>
 </div>
 
 			<hr>
@@ -197,6 +197,6 @@
 		<script	src="resources/js/jquery.dateFormat-1.0.js"></script>
 		<script	src="resources/js/other/utils.js"></script>
 		<script src="resources/js/jquery.validate.cj.js"></script>
-<script src="resources/js/contact/contact.js"></script>	
+		<script src="resources/js/contact/contact.js"></script>
 	</body>
 </html>
