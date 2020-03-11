@@ -8,7 +8,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<script type="text/javascript">
-			var contextPath = "//codejugglers.com";
+			var contextPath = "//" + window.location.hostname;
 		</script>
 
 		<link href="webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -105,15 +105,21 @@ Dipl.-Inf. Thomas Timm
 <table>
 	<tr>
 		<td><div>Telefon:</div></td>
-		<td><div>+49 (0) 2323 9593802</div></td>
+		<td><div id="phone"></div></td>
 	</tr>
 	<!-- <tr><td><div>Telefax:</div></td>
 	<td><div></div></td></tr> -->
 	<tr>
 		<td><div>E-Mail:</div></td>
-		<td><div>business@codejugglers.com</div></td>
+		<td><div id="email"></div></td>
 	</tr>
 </table>
+<script>
+(function() {
+	document.getElementById("phone").textContent = "2083959 3232 )0( 94+".split("").reverse().join("");
+	document.getElementById("email").textContent = "moc.srelggujedoc@ssenisub".split("").reverse().join("");
+})();
+</script>
 
 <h4>Registereintrag:</h4>
 <div>

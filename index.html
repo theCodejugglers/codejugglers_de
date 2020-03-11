@@ -8,7 +8,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<script type="text/javascript">
-			var contextPath = "//codejugglers.com";
+			var contextPath = "//" + window.location.hostname;
 		</script>
 
 		<link href="webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,9 @@
 			body {
 				padding-top: 60px;
 				padding-bottom: 40px;
+			}
+			[lang="de"] {
+				display: none;
 			}
 		</style>
 		<link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
@@ -54,7 +57,7 @@
 
 
 
-			<div class="nav-collapse">
+			<div class="nav-collapse" lang="en">
 				<ul class="nav">
 
 					<!-- Home -->
@@ -70,6 +73,31 @@
 					<!-- Legal -->
 					<li id="legalNavbar" class="nav">
 						<a href="legal">Legal</a>
+					</li>
+
+
+				</ul>
+
+				<!-- Super Administrator Menu -->
+
+
+			</div>
+			<div class="nav-collapse" lang="de">
+				<ul class="nav">
+
+					<!-- Home -->
+					<li id="homeNavbar" class="nav pull-left">
+						<a href="index.html">Start</a>
+					</li>
+
+					<!-- Contact -->
+					<li id="contactNavbar" class="nav">
+						<a href="contact">Kontakt</a>
+					</li>
+
+					<!-- Legal -->
+					<li id="legalNavbar" class="nav">
+						<a href="legal">Impressum</a>
 					</li>
 
 
@@ -97,9 +125,13 @@
 
 <div class="row-fluid">
 	<div class="span12">
-		<div class="hero-unit">
+		<div class="hero-unit" lang="en">
 			<h2>Welcome to codejugglers.com</h2>
 			<p>We keep the balance between <em>business requirements</em>, <em>creative ideas</em>, and your <em>mobile desires</em>.</p>
+		</div>
+		<div class="hero-unit" lang="de">
+			<h2>Willkommen auf codejugglers.de</h2>
+			<p>Wir balancieren <em>Geschäftsanforderungen</em>, <em>kreative Ideen</em>, und <em>Wünsche nach Mobilität</em>.</p>
 		</div>
 	</div>
 </div>
@@ -118,7 +150,8 @@
 			</div>
 			<div class="media-body">
 				<h4 class="media-heading">Android™</h4>
-				Here you can find detailed information about our current Android™ apps
+				<span lang="en">Here you can find detailed information about our current Android™ apps</span>
+				<span lang="de">Hier gibt es detaillierte Informationen über unsere Android™ Apps</span>
 			</div>
 		</div>
 	</div>
@@ -180,7 +213,7 @@
 
 				<li class="span4">
 
-					<div class="thumbnail">
+					<div class="thumbnail" lang="de">
 						<div class="center" style="text-align: center;">
 							<a href="app/teacherapp">
 								<img class="img-rounded" alt="Teacher App" style="width: 180px; height: 180px; padding: 10px;" src="resources/img/apps/teacherapp/teacherapp_logo.png">
@@ -215,10 +248,12 @@
 <hr />
 <div class="row-fluid">
 	<div class="span6">
-		<h3>We juggle your projects!</h3>
+		<h3 lang="en">We juggle your projects!</h3>
+		<h3 lang="de">Wir jonglieren Projekte!</h3>
 	</div>
 	<div class="span6">
-		<h5>Follow, +1, like us:</h4>
+		<h5 lang="en">Follow, +1, like us:</h4>
+		<h5 lang="de">Folge, +1, mögen:</h4>
 
 			<a href="https://twitter.com/theCodejugglers" class="twitter-follow-button" data-show-count="false">Follow @theCodejugglers</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -251,8 +286,11 @@
 </div>
 <div class="well well-small muted">
 	<div class="row-fluid">
-		<div class="span9">
+		<div class="span9" lang="en">
 			Portions of this page are modifications based on work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License. Android is a trademark of Google Inc.
+		</div>
+		<div class="span9" lang="de">
+			Teile dieser Seite basieren auf Werken von Google und werden gemäß der Vereinbarungen der Creative Commons 3.0 Attribution License verwendet. Android ist ein eingetragenes Wahrenzeichen von Google.
 		</div>
 		<div class="span3">
 			<ul>
@@ -278,5 +316,6 @@
 		<script	src="resources/js/jquery.dateFormat-1.0.js"></script>
 		<script	src="resources/js/other/utils.js"></script>
 		<script src="resources/js/index/index.js"></script>
+		<script src="resources/js/lang.js"></script>
 	</body>
 </html>
