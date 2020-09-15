@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Contact</title>
+		<title>Impressum</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -54,15 +54,22 @@
 
 			<!-- User Profile Menu -->
 
-
-
-
-			<div class="nav-collapse">
+			<div class="nav-collapse" lang="en">
 				<ul class="nav">
 
 					<!-- Home -->
 					<li id="homeNavbar" class="nav pull-left">
 						<a href="index.html">Home</a>
+					</li>
+
+					<!-- Consulting -->
+					<li id="consultingNavbar" class="nav">
+						<a href="consulting">Consulting</a>
+					</li>
+
+					<!-- Apps -->
+					<li id="appsNavbar" class="nav">
+						<a href="apps">Apps</a>
 					</li>
 
 					<!-- Contact -->
@@ -74,12 +81,37 @@
 					<li id="legalNavbar" class="nav">
 						<a href="legal">Legal</a>
 					</li>
-
-
 				</ul>
 
-				<!-- Super Administrator Menu -->
+			</div>
+			<div class="nav-collapse" lang="de">
+				<ul class="nav">
 
+					<!-- Home -->
+					<li id="homeNavbar" class="nav pull-left">
+						<a href="index.html">Start</a>
+					</li>
+
+					<!-- Consulting -->
+					<li id="consultingNavbar" class="nav">
+						<a href="consulting">Consulting</a>
+					</li>
+
+					<!-- Apps -->
+					<li id="appsNavbar" class="nav">
+						<a href="apps">Apps</a>
+					</li>
+
+					<!-- Contact -->
+					<li id="contactNavbar" class="nav">
+						<a href="contact">Kontakt</a>
+					</li>
+
+					<!-- Legal -->
+					<li id="legalNavbar" class="nav">
+						<a href="legal">Impressum</a>
+					</li>
+				</ul>
 
 			</div>
 
@@ -94,14 +126,14 @@
 
 <div>
 Codejugglers UG (haftungsbeschränkt)<br />
-Straße des Bohrhammers 21<br />
-44625 Herne<br />
+<div id="street"></div><br />
+<div id="address2"></div><br />
 </div>
 
 <h4>Vertreten durch:</h4>
 <div>
-Dipl.-Inf. Lars Schmidt<br />
-Dipl.-Inf. Thomas Timm
+<!-- Dipl.-Inf. Lars Schmidt<br /> -->
+Dr. Thomas Timm
 </div>
 
 <h4>Kontakt:</h4>
@@ -119,8 +151,10 @@ Dipl.-Inf. Thomas Timm
 </table>
 <script>
 (function() {
-	document.getElementById("phone").textContent = "2083959 3232 )0( 94+".split("").reverse().join("");
+	document.getElementById("phone").textContent = "5023641 3232 )0( 94+".split("").reverse().join("");
 	document.getElementById("email").textContent = "moc.srelggujedoc@ssenisub".split("").reverse().join("");
+	document.getElementById("street").textContent = "42 geW-neieB".split("").reverse().join("");
+	document.getElementById("address2").textContent = "enreH 32644".split("").reverse().join("");
 })();
 </script>
 
@@ -185,11 +219,14 @@ Daten der Nutzer werden weder erhoben, gespeichert noch verarbeitet.
 			<hr>
 			<footer>
 				<div class="pull-right">
-				<small>© codejugglers UG (haftungsbeschränkt) 2013 | <a class="btn-link" href="legal" target="blank">Legal Notice / Impressum</a></small>
+				<small>© codejugglers UG (haftungsbeschränkt) 2013<span id="year"></span> | <a class="btn-link" href="legal" target="blank">Legal Notice / Impressum</a></small>
 				</div>
 			</footer>
 		</div>
 
+		<script>
+			document.getElementById("year").textContent = "-" + new Date().getFullYear();
+		</script>
 		<!-- Javascript -->
 		<script	src="webjars/jquery/1.9.1/jquery.min.js"></script>
 		<script	src="webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
@@ -197,6 +234,7 @@ Daten der Nutzer werden weder erhoben, gespeichert noch verarbeitet.
 		<script	src="resources/js/jquery.dateFormat-1.0.js"></script>
 		<script	src="resources/js/other/utils.js"></script>
 		<script src="resources/js/jquery.validate.cj.js"></script>
-<script src="resources/js/legal/legal.js"></script>
+		<script src="resources/js/legal/legal.js"></script>
+		<script src="resources/js/lang.js"></script>
 	</body>
 </html>

@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	$("#contactNavbar").addClass("active");
-	
+
 	contextPath = getAjaxContextPath("/contact");
-	
+
 	var validator = $("#contactForm").validate({
 		rules: {
 			name: {
@@ -16,10 +16,10 @@ $(document).ready(function() {
 			},
 			text: {
 				required : true
-			}, 
+			},
 			recaptcha_challenge_field: {
 				required : true
-			}, 
+			},
 			recaptcha_response_field: {
 				required : true
 			}
@@ -36,10 +36,10 @@ $(document).ready(function() {
 			},
 			text: {
 				required : "Text is empty"
-			}, 
+			},
 			recaptcha_response_field: {
 				required : "Verification is empty"
-			}, 
+			},
 			recaptcha_challenge_field: {
 				required : "Verification is empty"
 			}
@@ -57,21 +57,21 @@ $(document).ready(function() {
 				recaptcha_challenge_field : encodeURIComponent($("input#recaptcha_challenge_field").val())
 			};
 
-			$.ajax({  
-				type: "POST",  
+			$.ajax({
+				type: "POST",
 				url: contextPath + "/contact",
 				data: jsonData,
 				dataType: "json",
 				success: function(response,status,xhr) {
 					var htmlResultText = "<div id=\"resultAlert\" class=\"alert alert-info\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>" + response + "</div>"
-					$('#mailResult').html(htmlResultText);		
+					$('#mailResult').html(htmlResultText);
 					resetForm();
 				},
 				error: function (xhr, ajaxOptions, thrownError) {
 					alert(thrownError);
 				}
-			});  
-			return false; 
+			});
+			return false;
 		},
 		success: function(label) {
 		}
@@ -85,7 +85,7 @@ $(document).ready(function() {
 function cancelButtonHandler(){
 	$("#cancelButton").click(function() {
 		document.location.href = contextPath + '/contact';
-	});	
+	});
 }
 
 function resetForm() {

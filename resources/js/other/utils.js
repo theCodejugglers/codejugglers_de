@@ -15,22 +15,22 @@ function isString(variable) {
 }
 
 function isNumber(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
+	return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
 var isValidFunctionName = function() {
-  var validName = /^[$a-zA-Z_][0-9a-zA-Z_$]*$/i;
-  var reserved = {
-    'abstract':true,
-    'boolean':true,
-	'null':true,
-	'NaN':true
-	//...
-  };
-  return function(s) {
-    // Ensure a valid name and not reserved.
-    return validName.test(s) && !reserved[s];
-  };
+	var validName = /^[$a-zA-Z_][0-9a-zA-Z_$]*$/i;
+	var reserved = {
+		'abstract':true,
+		'boolean':true,
+		'null':true,
+		'NaN':true
+		//...
+	};
+	return function(s) {
+		// Ensure a valid name and not reserved.
+		return validName.test(s) && !reserved[s];
+	};
 }();
 
 /**
@@ -69,11 +69,11 @@ function getOsType(string) {
 }
 
 function htmlEncode(value){
-  return $('<div/>').text(value).html();
+	return $('<div/>').text(value).html();
 }
 
 function htmlDecode(value){
-  return $('<div/>').html(value).text();
+	return $('<div/>').html(value).text();
 }
 
 function hide(jqueryObject) {
@@ -193,7 +193,7 @@ function deleteOperation(entityType, id){
 	$('#modalBody').attr('class', 'modal-body');
 	$('#buttonSubmit').attr('class', 'btn btn-danger no_return');
 	$('#modalCheck').modal('show');
-	
+
 	$('#buttonSubmit').click(function(e){
 		$('#modalCheck').modal("hide");
 		$.ajax({

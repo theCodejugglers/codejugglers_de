@@ -19,6 +19,9 @@
 				padding-top: 60px;
 				padding-bottom: 40px;
 			}
+			[lang="de"] {
+				display: none;
+			}
 		</style>
 		<link href="resources/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -52,14 +55,22 @@
 			<!-- User Profile Menu -->
 
 
-
-
 			<div class="nav-collapse">
 				<ul class="nav">
 
 					<!-- Home -->
 					<li id="homeNavbar" class="nav pull-left">
 						<a href="index.html">Home</a>
+					</li>
+
+					<!-- Consulting -->
+					<li id="consultingNavbar" class="nav">
+						<a href="consulting">Consulting</a>
+					</li>
+
+					<!-- Apps -->
+					<li id="appsNavbar" class="nav">
+						<a href="apps">Apps</a>
 					</li>
 
 					<!-- Contact -->
@@ -74,8 +85,6 @@
 
 
 				</ul>
-
-				<!-- Super Administrator Menu -->
 
 
 			</div>
@@ -100,6 +109,7 @@
 
 <div>Contact us:</div>
 <ul>
+	<li><a href= "#" id="a_cnslt">Email about consulting</a></li>
 	<li><a href= "#" id="a_vlchd">Email about VLC HD</a></li>
 	<li><a href= "#" id="a_zprmt">Email about ZPRemote</a></li>
 	<li><a href= "#" id="a_teapp">Email about TeacherApp</a></li>
@@ -119,6 +129,7 @@
 	}
 
 	var prefix = "mailto:" + address();
+	document.getElementById("a_cnslt").href = prefix + "?subject=Consulting";
 	document.getElementById("a_vlchd").href = prefix + "?subject=VLC%20HD";
 	document.getElementById("a_zprmt").href = prefix + "?subject=ZPRemote";
 	document.getElementById("a_teapp").href = prefix + "?subject=TeacherApp";
@@ -184,11 +195,14 @@
 			<hr>
 			<footer>
 				<div class="pull-right">
-				<small>© codejugglers UG (haftungsbeschränkt) 2013 | <a class="btn-link" href="legal" target="blank">Legal Notice / Impressum</a></small>
+				<small>© codejugglers UG (haftungsbeschränkt) 2013<span id="year"></span> | <a class="btn-link" href="legal" target="blank">Legal Notice / Impressum</a></small>
 				</div>
 			</footer>
 		</div>
 
+		<script>
+			document.getElementById("year").textContent = "-" + new Date().getFullYear();
+		</script>
 		<!-- Javascript -->
 		<script	src="webjars/jquery/1.9.1/jquery.min.js"></script>
 		<script	src="webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
@@ -197,5 +211,6 @@
 		<script	src="resources/js/other/utils.js"></script>
 		<script src="resources/js/jquery.validate.cj.js"></script>
 		<script src="resources/js/contact/contact.js"></script>
+		<script src="resources/js/lang.js"></script>
 	</body>
 </html>
