@@ -3,11 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>
-
-
-VLC HD Remote (+ Stream)
-</title>
+		<title>VLC HD Remote (+ Stream)</title> <!-- page.title -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -15,107 +11,118 @@ VLC HD Remote (+ Stream)
 			var contextPath = "//" + window.location.hostname;
 		</script>
 
-		<link href="../webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="../webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- <link href="../resources/css/bootstrap-responsive.css" rel="stylesheet"> -->
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous">
 		<link href="../resources/css/commons.css" rel="stylesheet">
 
 		<style type="text/css">
-			body {
+			/* body {
 				padding-top: 60px;
 				padding-bottom: 40px;
-			}
+			} */
 			[lang="de"] {
 				display: none;
 			}
+			.app-image {
+				height: 600px;
+				margin: auto
+			}
+			.carousel-caption, .carousel-control-next-icon, .carousel-control-prev-icon {
+				background-color: #00000088;
+			}
 		</style>
-		<link href="../resources/css/bootstrap-responsive.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 
 		<link rel="shortcut icon" href="../resources/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png"> -->
 	</head>
 
 	<body>
 
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-			<a class="btn btn-navbar"
-					data-toggle="collapse"
-					data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="index.html">Codejugglers</a>
 
-			<a class="brand" href="../">Codejugglers</a>
+	<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
-			<!-- User Profile Menu -->
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<!-- Home -->
+			<li id="homeNavbar" class="nav-item">
+				<a href="index.html" class="nav-link">
+					<span lang="en">Home</span>
+					<span lang="de">Start</span>
+				</a>
+			</li>
 
+			<!-- Consulting -->
+			<li id="consultingNavbar" class="nav-item">
+				<a href="consulting" class="nav-link">Consulting</a>
+			</li>
 
+			<!-- Apps -->
+			<li id="appsNavbar" class="nav-item">
+				<a href="apps" class="nav-link">Apps</a>
+			</li>
 
+			<!-- Contact -->
+			<li id="contactNavbar" class="nav-item">
+				<a href="contact" class="nav-link">
+					<span lang="en">Contact</span>
+					<span lang="de">Kontakt</span>
+				</a>
+			</li>
 
-			<div class="nav-collapse">
-				<ul class="nav">
-
-					<!-- Home -->
-					<li id="homeNavbar" class="nav pull-left">
-						<a href="../">Home</a>
-					</li>
-
-					<!-- Contact -->
-					<li id="contactNavbar" class="nav">
-						<a href="../contact">Contact</a>
-					</li>
-
-					<!-- Legal -->
-					<li id="legalNavbar" class="nav">
-						<a href="../legal">Legal</a>
-					</li>
-
-
-				</ul>
-
-				<!-- Super Administrator Menu -->
-
-
-			</div>
-
-		</div>
+			<!-- Legal -->
+			<li id="legalNavbar" class="nav-item">
+				<a href="legal" class="nav-link">
+					<span lang="en">Legal</span>
+					<span lang="de">Impressum</span>
+				</a>
+			</li>
+		</ul>
 	</div>
-</div>
+</nav>
 		<div class="container">
 
 
-
-<div class="row-fluid">
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="page-header">
+			<div class="pb-2 mt-4 mb-2 border-bottom"> <!-- page-header -->
 				<h1 lang="en">VLC HD Remote (+ Stream) <small>for <span style="text-transform: capitalize">android</span></small> </h1>
 				<h1 lang="de">VLC HD Remote (+ Stream) <small>für <span style="text-transform: capitalize">android</span></small> </h1>
 			</div>
+<div class="row">
+	<!-- <div class="row">
+		<div class="col-lg-12">
+			...
 		</div>
-	</div>
-	<div class="row-fluid">
-		<div class="span3">
-			<div class="row-fluid pagination-centered" style="padding-bottom: 10px;">
+	</div> -->
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="row pagination-centered" style="padding-bottom: 10px;">
 				<img src="../resources/img/apps/vlchd/vlchd_logo.png" class="img-polaroid" style="height: 200px; padding: 10px;">
 			</div>
 
-			<div class="row-fluid pagination-centered" style="padding-bottom: 10px;">
+			<div class="row pagination-centered" style="padding-bottom: 10px;">
 				<a href="https://play.google.com/store/apps/details?id=net.codejugglers.android.vlchd">
 					<img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
 				</a>
 			</div>
 		</div>
-		<div class="span9">
+		<div class="col-lg-9">
 			<div lang="en">
 				<div>
 					<div>
@@ -149,8 +156,8 @@ VLC HD Remote (+ Stream)
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="col-lg-12">
 			<div>
 				<div>
 					<div lang="en">
@@ -192,131 +199,134 @@ VLC HD Remote (+ Stream)
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span3"></div>
-		<div class="span6">
-			<div id="myCarousel" class="carousel slide">
+	<div class="row col-lg-12"> <!-- added col-lg-12, no need before -->
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<div id="my-carousel" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
-
-						<li data-slide-to="0" data-target="#myCarousel" class="active"></li>
-
-						<li data-slide-to="1" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="2" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="3" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="4" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="5" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="6" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="7" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="8" data-target="#myCarousel" ></li>
-
+					<li data-slide-to="0" data-target="#my-carousel" class="active"></li>
+					<li data-slide-to="1" data-target="#my-carousel" ></li>
+					<li data-slide-to="2" data-target="#my-carousel" ></li>
+					<li data-slide-to="3" data-target="#my-carousel" ></li>
+					<li data-slide-to="4" data-target="#my-carousel" ></li>
+					<li data-slide-to="5" data-target="#my-carousel" ></li>
+					<li data-slide-to="6" data-target="#my-carousel" ></li>
+					<li data-slide-to="7" data-target="#my-carousel" ></li>
+					<li data-slide-to="8" data-target="#my-carousel" ></li>
 				</ol>
-				<!-- Carousel items -->
 				<div class="carousel-inner">
-
-						<div class="item active">
-							<img src="../resources/img/apps/vlchd/screenshots/35.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item active">
+							<img src="../resources/img/apps/vlchd/screenshots/35.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">VLC device list</span>
 								<span lang="de">VLC Geräte</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/36.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/36.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">Extended controls</span>
 								<span lang="de">Erweiterte Befehle</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/37.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/37.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">Network scan</span>
 								<span lang="de">Netzwerksuche</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/38.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/38.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">Computer file explorer</span>
 								<span lang="de">Dateien auf dem Computer</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/39.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/39.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">In app help</span>
 								<span lang="de">Eingebaute Hilfe</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/40.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/40.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">Streaming to android device</span>
 								<span lang="de">Streamen zu einem Android-Gerät</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/41.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/41.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">Playlist options</span>
 								<span lang="de">Optionen für die Wiedergabeliste</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/42.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/42.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">Start screen</span>
 								<span lang="de">Startbildschirm</span>
 							</div>
 						</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/vlchd/screenshots/43.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
+						<div class="carousel-item">
+							<img src="../resources/img/apps/vlchd/screenshots/43.png" class="d-block app-image">
+							<div class="carousel-caption d-none d-md-block">
 								<span lang="en">Android device file browser</span>
 								<span lang="de">Dateiauswahl über Android-Gerät</span>
 							</div>
 						</div>
-
-
 				</div>
-				<!-- Carousel nav -->
-				<a data-slide="prev" href="#myCarousel" class="left carousel-control">&lsaquo;</a>
-				<a data-slide="next" href="#myCarousel" class="right carousel-control">&rsaquo;</a>
+				<a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#my-carousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
-		<div class="span3"></div>
+		<div class="col-lg-3"></div>
 
 
 	</div>
 </div>
 			<hr>
 			<footer>
-				<div class="pull-right">
-				<small>© codejugglers UG (haftungsbeschränkt) 2013 | <a class="btn-link" href="../legal" target="blank">Legal Notice / Impressum</a></small>
+				<div class="float-md-right">
+				<small>© codejugglers UG (haftungsbeschränkt) 2013<span id="year"></span> |
+					<a class="btn-link" href="legal" target="blank">
+						<span lang="en">Legal Notice</span><span lang="de">Impressum</span>
+					</a></small>
 				</div>
 			</footer>
 		</div>
 
+		<script>
+			document.getElementById("year").textContent = "-" + new Date().getFullYear();
+		</script>
 		<!-- Javascript -->
-		<script	src="../webjars/jquery/1.9.1/jquery.min.js"></script>
-		<script	src="../webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-		<script	src="../resources/js/bootstrap-popover.js"></script>
-		<script	src="../resources/js/jquery.dateFormat-1.0.js"></script>
+		<!-- <script src="../webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script src="../resources/js/bootstrap-popover.js"></script>
+		<script src="../resources/js/jquery.dateFormat-1.0.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		<script	src="../resources/js/other/utils.js"></script>
 		<script src="../resources/js/lang.js"></script>
 	</body>

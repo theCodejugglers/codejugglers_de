@@ -3,11 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>
-
-
-Teacher App
-</title>
+		<title>Teacher App</title> <!-- page.title -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -15,250 +11,301 @@ Teacher App
 			var contextPath = "//" + window.location.hostname;
 		</script>
 
-		<link href="../webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="../webjars/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- <link href="../resources/css/bootstrap-responsive.css" rel="stylesheet"> -->
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous">
 		<link href="../resources/css/commons.css" rel="stylesheet">
 
 		<style type="text/css">
-			body {
+			/* body {
 				padding-top: 60px;
 				padding-bottom: 40px;
+			} */
+			.app-image {
+				height: 600px;
+				margin: auto
+			}
+			.carousel-caption, .carousel-control-next-icon, .carousel-control-prev-icon {
+				background-color: #00000088;
 			}
 		</style>
-		<link href="../resources/css/bootstrap-responsive.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 
 		<link rel="shortcut icon" href="../resources/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="//twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png"> -->
 	</head>
 
 	<body>
 
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container-fluid">
-			<a class="btn btn-navbar"
-					data-toggle="collapse"
-					data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="index.html">Codejugglers</a>
 
-			<a class="brand" href="../">Codejugglers</a>
+	<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
-			<!-- User Profile Menu -->
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<!-- Home -->
+			<li id="homeNavbar" class="nav-item">
+				<a href="index.html" class="nav-link">
+					<span lang="en">Home</span>
+					<span lang="de">Start</span>
+				</a>
+			</li>
 
+			<!-- Consulting -->
+			<li id="consultingNavbar" class="nav-item">
+				<a href="consulting" class="nav-link">Consulting</a>
+			</li>
 
+			<!-- Apps -->
+			<li id="appsNavbar" class="nav-item">
+				<a href="apps" class="nav-link">Apps</a>
+			</li>
 
+			<!-- Contact -->
+			<li id="contactNavbar" class="nav-item">
+				<a href="contact" class="nav-link">
+					<span lang="en">Contact</span>
+					<span lang="de">Kontakt</span>
+				</a>
+			</li>
 
-			<div class="nav-collapse">
-				<ul class="nav">
-
-					<!-- Home -->
-					<li id="homeNavbar" class="nav pull-left">
-						<a href="../">Home</a>
-					</li>
-
-					<!-- Contact -->
-					<li id="contactNavbar" class="nav">
-						<a href="../contact">Contact</a>
-					</li>
-
-					<!-- Legal -->
-					<li id="legalNavbar" class="nav">
-						<a href="../legal">Legal</a>
-					</li>
-
-
-				</ul>
-
-				<!-- Super Administrator Menu -->
-
-
-			</div>
-
-		</div>
+			<!-- Legal -->
+			<li id="legalNavbar" class="nav-item">
+				<a href="legal" class="nav-link">
+					<span lang="en">Legal</span>
+					<span lang="de">Impressum</span>
+				</a>
+			</li>
+		</ul>
 	</div>
-</div>
+</nav>
 		<div class="container">
 
 
-
-<div class="row-fluid">
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="page-header">
+			<div class="pb-2 mt-4 mb-2 border-bottom"> <!-- page-header -->
 				<h1>Teacher App <small>for <span style="text-transform: capitalize">android</span></small> </h1>
 			</div>
+<div class="row">
+	<!-- <div class="row">
+		<div class="col-lg-12">
+			...
 		</div>
-	</div>
-	<div class="row-fluid">
-		<div class="span3">
-			<div class="row-fluid pagination-centered" style="padding-bottom: 10px;">
+	</div> -->
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="row pagination-centered" style="padding-bottom: 10px;">
 				<img src="../resources/img/apps/teacherapp/teacherapp_logo.png" class="img-polaroid" style="height: 200px; padding: 10px;">
 			</div>
 
-			<div class="row-fluid pagination-centered" style="padding-bottom: 10px;">
+			<div class="row pagination-centered" style="padding-bottom: 10px;">
 				<a href="https://play.google.com/store/apps/details?id=net.codejugglers.android.teacherapp">
 					<img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png" />
 				</a>
 			</div>
 		</div>
-		<div class="span9">
+		<div class="col-lg-9">
 			<div>
-				<i>Eine App für Lehrer macht Schule.</i><br><br><p>Die LehrerApp (TeacherApp) ist das ideale Hilfsmittel für alle Lehrer. Mit der LehrerApp können Kurse, Schüler und deren Noten auf leichte Weise verwaltet werden. Lehren war noch nie so einfach.</p>
+				<i>Eine App für Lehrer macht Schule.</i><br><br>
+				<p>
+					Die LehrerApp (TeacherApp) ist das ideale Hilfsmittel für alle Lehrer.
+					Mit der LehrerApp können Kurse, Schüler und deren Noten auf leichte Weise verwaltet werden.
+					Lehren war noch nie so einfach.
+				</p>
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span12">
+	<div class="row">
+		<div class="col-lg-12">
 			<div>
-				<h4>Funktionen:</h4>Verwaltung von mehreren Kursen (bspw. nach Jahrgang)<ul><li>Farbliche Kennzeichnung erleichtert das Auffinden eines Kurses</li><li>Schüleranzahl eines Kurses wird in der Liste angezeigt</li><li>Legen Sie einen Kurs für jedes Fach an (Mathe, Deutsch, Englisch, ...)</li></ul>Kursdetails<ul><li>Definition von benutzerdefinierten Eigenschaften pro Fach möglich</li><li>Notizen ermöglichen schnelle Anmerkungen</li></ul>Schülerlisten<ul><li>Schüler können über die Kontaktliste des Android-Gerätes hinzugefügt werden.</li><li>Die Auswahl aus bereits angelegten Schülern (Fotoliste) ist ebenfalls möglich.</li></ul>Schüleransicht<ul><li>Verknüpfung von Schülern mit den Kontakdaten aus dem Adressbuch</li><li>Fotos von Schülern werden aus den Kontaktdaten gelesen</li><li>Generierung eines Klassenspiegels (pro Kategorie!) inklusive Durchschnitt</li></ul>Notenverwaltung<ul><li>Verwaltung der Noten in einem Notenbaum beliebiger Tiefe</li><li>Automatische Neuberechnung auf allen Ebenen des Notenbaumes</li><li>Jede Note einer Bewertung wird farblich hervorgehoben</li><li>Noten und Kategorien können Gewichte zugewiesen werden</li><li>Berücksichtung der Gewichtung bei der Berechnung des Notenspiegels</li></ul>Verwaltung von Checklisten zu Schülern<ul><li>Klassenfahrten, Kopiergeld, Tafeldienste - behalten Sie alles im Blick</li><li>Berücksichtung von Ausnahmen, Anzeigen von Statistiken</li></ul>Sitzplan<ul><li>Schüler einer Klasse können mit Foto im Raum platziert und umgesetzt werden</li><li>Definition von eigenen Objekten (Tafeln, Schänke, Tische) für das Klassenzimmer</li><li>Nachträgliche Vergrößerung des Sitzplans möglich</li><li>Anzeige einer Übersicht über den Klassenraum</li></ul>Allgemeines<ul><li>Dokumentation direkt in der Anwendung verfügbar</li><li>Verschiedene Designs unterstützt (hell/dunkel)</li><li>Datensicherung/Backup aller Daten möglich</li><li>Vielfältige Einstellungsmöglichkeiten</li></ul>Weitere Funktionen befinden sich bereits in der Entwicklung. Rückmeldungen und Vorschläge sind erwünscht.<br><br><br>
+				<h4>Funktionen:</h4>Verwaltung von mehreren Kursen (bspw. nach Jahrgang)<ul>
+					<li>Farbliche Kennzeichnung erleichtert das Auffinden eines Kurses</li>
+					<li>Schüleranzahl eines Kurses wird in der Liste angezeigt</li>
+					<li>Legen Sie einen Kurs für jedes Fach an (Mathe, Deutsch, Englisch, ...)</li>
+				</ul>Kursdetails<ul>
+					<li>Definition von benutzerdefinierten Eigenschaften pro Fach möglich</li>
+					<li>Notizen ermöglichen schnelle Anmerkungen</li>
+				</ul>Schülerlisten<ul>
+					<li>Schüler können über die Kontaktliste des Android-Gerätes hinzugefügt werden.</li>
+					<li>Die Auswahl aus bereits angelegten Schülern (Fotoliste) ist ebenfalls möglich.</li>
+				</ul>Schüleransicht<ul>
+					<li>Verknüpfung von Schülern mit den Kontakdaten aus dem Adressbuch</li>
+					<li>Fotos von Schülern werden aus den Kontaktdaten gelesen</li>
+					<li>Generierung eines Klassenspiegels (pro Kategorie!) inklusive Durchschnitt</li>
+				</ul>Notenverwaltung<ul>
+					<li>Verwaltung der Noten in einem Notenbaum beliebiger Tiefe</li>
+					<li>Automatische Neuberechnung auf allen Ebenen des Notenbaumes</li>
+					<li>Jede Note einer Bewertung wird farblich hervorgehoben</li>
+					<li>Noten und Kategorien können Gewichte zugewiesen werden</li>
+					<li>Berücksichtung der Gewichtung bei der Berechnung des Notenspiegels</li>
+				</ul>Verwaltung von Checklisten zu Schülern<ul>
+					<li>Klassenfahrten, Kopiergeld, Tafeldienste - behalten Sie alles im Blick</li>
+					<li>Berücksichtung von Ausnahmen, Anzeigen von Statistiken</li>
+				</ul>Sitzplan<ul>
+					<li>Schüler einer Klasse können mit Foto im Raum platziert und umgesetzt werden</li>
+					<li>Definition von eigenen Objekten (Tafeln, Schänke, Tische) für das Klassenzimmer</li>
+					<li>Nachträgliche Vergrößerung des Sitzplans möglich</li>
+					<li>Anzeige einer Übersicht über den Klassenraum</li>
+				</ul>Allgemeines<ul>
+					<li>Dokumentation direkt in der Anwendung verfügbar</li>
+					<li>Verschiedene Designs unterstützt (hell/dunkel)</li>
+					<li>Datensicherung/Backup aller Daten möglich</li>
+					<li>Vielfältige Einstellungsmöglichkeiten</li>
+				</ul>Weitere Funktionen befinden sich bereits in der Entwicklung.
+				Rückmeldungen und Vorschläge sind erwünscht.<br><br><br>
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="span3"></div>
-		<div class="span6">
-			<div id="myCarousel" class="carousel slide">
+	<div class="row col-lg-12">
+		<div class="col-lg-3"></div>
+		<div class="col-lg-6">
+			<div id="my-carousel" class="carousel slide">
 				<ol class="carousel-indicators">
-
-						<li data-slide-to="0" data-target="#myCarousel" class="active"></li>
-
-						<li data-slide-to="1" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="2" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="3" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="4" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="5" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="6" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="7" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="8" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="9" data-target="#myCarousel" ></li>
-
-						<li data-slide-to="10" data-target="#myCarousel" ></li>
-
+					<li data-slide-to="0" data-target="#my-carousel" class="active"></li>
+					<li data-slide-to="1" data-target="#my-carousel" ></li>
+					<li data-slide-to="2" data-target="#my-carousel" ></li>
+					<li data-slide-to="3" data-target="#my-carousel" ></li>
+					<li data-slide-to="4" data-target="#my-carousel" ></li>
+					<li data-slide-to="5" data-target="#my-carousel" ></li>
+					<li data-slide-to="6" data-target="#my-carousel" ></li>
+					<li data-slide-to="7" data-target="#my-carousel" ></li>
+					<li data-slide-to="8" data-target="#my-carousel" ></li>
+					<li data-slide-to="9" data-target="#my-carousel" ></li>
+					<li data-slide-to="10" data-target="#my-carousel" ></li>
 				</ol>
-				<!-- Carousel items -->
 				<div class="carousel-inner">
-
-						<div class="item active">
-							<img src="../resources/img/apps/teacherapp/screenshots/24.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Liste aller Kurse<br>Die Kursliste bietet eine gute Übersicht über alle verwalteten Kurse.
-							</div>
+					<div class="carousel-item active">
+						<img src="../resources/img/apps/teacherapp/screenshots/24.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Liste aller Kurse<br>Die Kursliste bietet eine gute Übersicht über alle verwalteten Kurse.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/25.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Schülerdetails<br>Detailansicht der Daten zu einem Schüler. Der Notenbaum ermöglicht die Strukturierung in beliebiger Tiefe.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/25.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Schülerdetails<br>Detailansicht der Daten zu einem Schüler. Der Notenbaum ermöglicht die Strukturierung in beliebiger Tiefe.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/26.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Klassenraum<br>Im Klassenraum können Schüler oder auch andere Objekte (wie Tafel, Schränke oder Tische) platziert werden.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/26.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Klassenraum<br>Im Klassenraum können Schüler oder auch andere Objekte (wie Tafel, Schränke oder Tische) platziert werden.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/27.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Checklisten<br>Mit der Hilfe von Checklisten, die automatisch aus der Liste aller Schüler eines Kurses generiert werden können, ist es auf einfache Weise möglich, zum Beispiel den Zahlungsstatus von Kopiergeld nachzuhalten.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/27.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Checklisten<br>Mit der Hilfe von Checklisten, die automatisch aus der Liste aller Schüler eines Kurses generiert werden können, ist es auf einfache Weise möglich, zum Beispiel den Zahlungsstatus von Kopiergeld nachzuhalten.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/28.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Kursdetails<br>Zu einem Kurs können frei definierbare Eigenschaften gepflegt oder auch Notizen hinzugefügt werden.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/28.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Kursdetails<br>Zu einem Kurs können frei definierbare Eigenschaften gepflegt oder auch Notizen hinzugefügt werden.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/29.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Noteneingabe<br>Die Noteneingabe erfolgt mittels eines übersichtlichen Eingabedialogs.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/29.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Noteneingabe<br>Die Noteneingabe erfolgt mittels eines übersichtlichen Eingabedialogs.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/30.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Notenspiegel<br>Zu einer definierten Kategorie (Bsp.: Klassenarbeit 1.Halbjahr) kann per Knopfdruck ein Notenspiegel samt Durchschnittsnote des Kurses generiert werden.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/30.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Notenspiegel<br>Zu einer definierten Kategorie (Bsp.: Klassenarbeit 1.Halbjahr) kann per Knopfdruck ein Notenspiegel samt Durchschnittsnote des Kurses generiert werden.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/31.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Einstellungen<br>Vielfältige Einstellungen ermöglichen eine individuelle Anpassung der Anwendung. Zudem können Sicherheitskopien angelegt werden.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/31.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Einstellungen<br>Vielfältige Einstellungen ermöglichen eine individuelle Anpassung der Anwendung. Zudem können Sicherheitskopien angelegt werden.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/32.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Schüler aus anderen Kursen<br>Es können Schüler, die bereits in der Anwendung referenziert wurden, auf leichte Weise zu anderen Kursen hinzugefügt werden.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/32.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Schüler aus anderen Kursen<br>Es können Schüler, die bereits in der Anwendung referenziert wurden, auf leichte Weise zu anderen Kursen hinzugefügt werden.
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/33.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								LehrerApp Hilfe<br>Die integrierte Hilfe erklärt die Funktionen der Anwendung (Es ist keine Verbindung zum Internet notwendig!).
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/33.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							LehrerApp Hilfe<br>Die integrierte Hilfe erklärt die Funktionen der Anwendung (Es ist keine Verbindung zum Internet notwendig!).
 						</div>
+					</div>
 
-						<div class="item ">
-							<img src="../resources/img/apps/teacherapp/screenshots/34.png" class="img-polaroid" style="height: 600px; margin: auto;">
-							<div class="carousel-caption" style="color: #ffffff;">
-								Schülerliste<br>Die Schüler eines Kurses werden in einer übersichtlichen Liste mit Fotos dargestellt.
-							</div>
+					<div class="carousel-item">
+						<img src="../resources/img/apps/teacherapp/screenshots/34.png" class="d-block app-image">
+						<div class="carousel-caption d-none d-md-block">
+							Schülerliste<br>Die Schüler eines Kurses werden in einer übersichtlichen Liste mit Fotos dargestellt.
 						</div>
-
-
+					</div>
 				</div>
-				<!-- Carousel nav -->
-				<a data-slide="prev" href="#myCarousel" class="left carousel-control">&lsaquo;</a>
-				<a data-slide="next" href="#myCarousel" class="right carousel-control">&rsaquo;</a>
+				<a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#my-carousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
-		<div class="span3"></div>
+		<div class="col-lg-3"></div>
 
 
 	</div>
 </div>
 			<hr>
 			<footer>
-				<div class="pull-right">
-				<small>© codejugglers UG (haftungsbeschränkt) 2013 | <a class="btn-link" href="../legal" target="blank">Legal Notice / Impressum</a></small>
+				<div class="float-md-right">
+				<small>© codejugglers UG (haftungsbeschränkt) 2013<span id="year"></span> |
+					<a class="btn-link" href="legal" target="blank">
+						<span lang="en">Legal Notice</span><span lang="de">Impressum</span>
+					</a></small>
 				</div>
 			</footer>
 		</div>
 
+		<script>
+			document.getElementById("year").textContent = "-" + new Date().getFullYear();
+		</script>
 		<!-- Javascript -->
-		<script	src="../webjars/jquery/1.9.1/jquery.min.js"></script>
-		<script	src="../webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-		<script	src="../resources/js/bootstrap-popover.js"></script>
-		<script	src="../resources/js/jquery.dateFormat-1.0.js"></script>
+		<!-- <script src="../webjars/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script src="../resources/js/bootstrap-popover.js"></script> -->
+		<!-- <script src="../resources/js/jquery.dateFormat-1.0.js"></script> -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		<script	src="../resources/js/other/utils.js"></script>
-
+		<script src="../resources/js/lang.js"></script>
 	</body>
 </html>
